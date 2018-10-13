@@ -1,0 +1,19 @@
+@import 'logo/nav';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: 'lato';
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: linear-gradient(to bottom right, lighten(#3498db, 10%), darken(#3498db, 5%));
+}

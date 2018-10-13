@@ -85,3 +85,45 @@ body {
   min-width: 100vw;
   background-image: linear-gradient(to bottom right, #5faee3, #258cd1); }
 
+.area {
+  position: absolute;
+  top: 2.5vh;
+  left: 50vw;
+  border: 1px solid white;
+  width: 25vw;
+  height: 10vh;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
+  .area__time {
+    width: 25%;
+    border-right: 1px solid white;
+    height: 100%; }
+
+.clock {
+  width: 100%;
+  height: 100%;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: relative;
+  padding: 2rem; }
+  .clock > * {
+    width: 50%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    -webkit-transform-origin: 100%;
+            transform-origin: 100%;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    transition: all .05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1); }
+  .clock__hour {
+    width: 40%;
+    background: red; }
+  .clock__min {
+    width: 50%;
+    background: black; }
+  .clock__sec {
+    width: 30%;
+    background: white; }

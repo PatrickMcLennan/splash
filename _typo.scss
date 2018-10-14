@@ -1,0 +1,16 @@
+@mixin h1 {
+  font-size: 5rem;
+  letter-spacing: .5rem;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+@mixin h1Span {
+  font-size: 2.5rem;
+  letter-spacing: .25rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  align-self: flex-end;
+}
+
+@mixin

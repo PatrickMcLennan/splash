@@ -1,4 +1,5 @@
 @import 'logo/nav';
+@import 'typo';
 
 *,
 *::before,
@@ -7,6 +8,7 @@
   padding: 0;
   box-sizing: inherit;
   font-family: 'lato';
+  color: white;
 }
 html {
   font-size: 62.5%;
@@ -16,13 +18,14 @@ body {
   min-height: 100vh;
   min-width: 100vw;
   background-image: linear-gradient(to bottom right, lighten(#3498db, 10%), darken(#3498db, 5%));
+  overflow-x: hidden;
+  padding: 0 2vw;
 }
 
 .area {
-  position: absolute;
-  top: 2.5vh;
+  position: fixed;
+  top: 2vh;
   left: 50vw;
-  border: 1px solid white;
   width: 25vw;
   height: 10vh;
   transform: translateX(-50%);
@@ -34,11 +37,9 @@ body {
   }
 }
 
-
 .clock {
   width: 100%;
   height: 100%;
-  border: 1px solid white;
   border-radius: 50%;
   position: relative;
   padding: 2rem;
@@ -65,5 +66,34 @@ body {
   &__sec {
     width: 30%;
     background: white;
+  }
+}
+
+.about {
+
+  margin-top: 25vh;
+  &__header {
+    @include h1;
+    display: flex;
+    justify-content: space-evenly;
+
+
+    & span {
+      @include h1Span;
+    }
+
+  }
+
+  &__figure {
+    display: flex;
+
+  }
+  &__headshot {
+    width: 30vw;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 }

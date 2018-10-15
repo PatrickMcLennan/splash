@@ -1,10 +1,13 @@
 'use strict';
 
 const DOM = {
+  // CLOCK
   clock: document.querySelector('.clock'),
   hour: document.querySelector('.clock__hour'),
   min: document.querySelector('.clock__min'),
   sec: document.querySelector('.clock__sec'),
+
+  // WEATHER
 };
 
 function clock() {

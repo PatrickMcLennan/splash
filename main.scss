@@ -36,34 +36,27 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex: 1;
     font-weight: 100;
     font-size: 1rem;
   }
 
-  &__time {
-    flex: 1;
-  }
-
   &__weather {
     border: 1px solid white;
-    flex: 1;
     display: flex;
   }
 
   &__icon {
-    flex: 1;
     border: 1px solid white;
   }
 
   &__temperature {
     border: 1px solid white;
-    flex: 1;
 
   }
 
   &__humidity {
     border: 1px solid white;
-    flex: 1;
   }
 }
 

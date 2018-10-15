@@ -35,6 +35,21 @@ function clock() {
   setTimeout(clock, 1000);
 }
 
+class Weather {
+  constructor(city) {
+    this.city = DOM.name;
+    this.icon = DOM.icon;
+    this.temp = DOM.degrees;
+    this.humidity = DOM.humidityDiv;
+    this.apiLink = 'https://api.openweathermap.org/data/2.5/weather?q=';
+    this.apiKey = 'd6d19152d2759e5bf10dde13869c6c69';
+    this.city = city;
+  }
+
+  getWeather() {
+    const city = `${this.apiLink}${this.city}${this.apiKey}`;
+  }
+}
 
 function letFly() {
   clock();

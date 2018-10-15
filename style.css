@@ -102,23 +102,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex: 1;
     font-weight: 100;
     font-size: 1rem; }
-  .area__time {
-    flex: 1; }
   .area__weather {
     border: 1px solid white;
-    flex: 1;
     display: flex; }
   .area__icon {
-    flex: 1;
     border: 1px solid white; }
   .area__temperature {
-    border: 1px solid white;
-    flex: 1; }
+    border: 1px solid white; }
   .area__humidity {
-    border: 1px solid white;
-    flex: 1; }
+    border: 1px solid white; }
 
 .clock {
   width: 100%;

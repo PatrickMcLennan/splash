@@ -95,11 +95,30 @@ body {
   width: 25vw;
   height: 10vh;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%); }
+          transform: translateX(-50%);
+  display: flex;
+  justify-content: space-evenly; }
+  .area > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
+    font-size: 1rem; }
   .area__time {
-    width: 25%;
-    border-right: 1px solid white;
-    height: 100%; }
+    flex: 1; }
+  .area__weather {
+    border: 1px solid white;
+    flex: 1;
+    display: flex; }
+  .area__icon {
+    flex: 1;
+    border: 1px solid white; }
+  .area__temperature {
+    border: 1px solid white;
+    flex: 1; }
+  .area__humidity {
+    border: 1px solid white;
+    flex: 1; }
 
 .clock {
   width: 100%;
@@ -120,13 +139,13 @@ body {
     transition: all .05s;
     transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1); }
   .clock__hour {
-    width: 40%;
+    width: 25%;
     background: red; }
   .clock__min {
-    width: 50%;
+    width: 37.5%;
     background: black; }
   .clock__sec {
-    width: 30%;
+    width: 27.5%;
     background: white; }
 
 .about {

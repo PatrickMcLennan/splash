@@ -8,6 +8,13 @@ const DOM = {
   sec: document.querySelector('.clock__sec'),
 
   // WEATHER
+  icon: document.querySelector('.area__icon'),
+  iconHolder: document.querySelector('.area__icon-holder'),
+  name: document.querySelector('.area__name'),
+  temperature: document.querySelector('.area__temperature'),
+  degrees: document.querySelector('.area__degrees'),
+  humidity: document.querySelector('.area__humidity'),
+  humidityDiv: document.querySelector('.area__humidity-div'),
 };
 
 function clock() {
@@ -27,6 +34,7 @@ function clock() {
 
   setTimeout(clock, 1000);
 }
+
 
 function letFly() {
   clock();

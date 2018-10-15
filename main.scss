@@ -29,11 +29,41 @@ body {
   width: 25vw;
   height: 10vh;
   transform: translateX(-50%);
+  display: flex;
+  justify-content: space-evenly;
+
+  & > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
+    font-size: 1rem;
+  }
 
   &__time {
-    width: 25%;
-    border-right: 1px solid white;
-    height: 100%;
+    flex: 1;
+  }
+
+  &__weather {
+    border: 1px solid white;
+    flex: 1;
+    display: flex;
+  }
+
+  &__icon {
+    flex: 1;
+    border: 1px solid white;
+  }
+
+  &__temperature {
+    border: 1px solid white;
+    flex: 1;
+
+  }
+
+  &__humidity {
+    border: 1px solid white;
+    flex: 1;
   }
 }
 
@@ -56,18 +86,19 @@ body {
     transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
   }
   &__hour {
-    width: 40%;
+    width: 25%;
     background: red;
   }
   &__min {
-    width: 50%;
+    width: 37.5%;
     background: black;
   }
   &__sec {
-    width: 30%;
+    width: 27.5%;
     background: white;
   }
 }
+
 
 .about {
 

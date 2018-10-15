@@ -90,6 +90,12 @@ body {
   }
   &__headshot {
     width: 30vw;
+
+    & img {
+      height: 100%;
+      width: 100%;
+      object-fit: center;
+    }
   }
   &__text {
     display: flex;

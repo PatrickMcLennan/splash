@@ -148,6 +148,11 @@ body {
     display: flex; }
   .about__headshot {
     width: 30vw; }
+    .about__headshot img {
+      height: 100%;
+      width: 100%;
+      -o-object-fit: center;
+         object-fit: center; }
   .about__text {
     display: flex;
     flex-direction: column;
